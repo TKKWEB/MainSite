@@ -1,0 +1,15 @@
+@import "colors";
+
+@import "defaults";
+
+@import "fonts";
+
+header {
+    font-family: "Noto Sans", sans-serif;
+    height: 100vh;
+    padding: 10px;
+    background: rgb(101, 226, 168);
+    background: linear-gradient(90deg, rgb(101, 226, 168) 7%, rgb(101, 226, 114) 61%, rgb(117, 226, 101) 100%);
+    -webkit-clip-path: polygon(0 4%, 100% 0%, 100% 80%, 0% 100%);
+            clip-path: polygon(0 4%, 100% 0%, 100% 80%, 0% 100%);
+  }
