@@ -111,6 +111,11 @@ header {
   font-size: 1.3em;
   transition: font-size 0.5s ease-in-out;
 }
+.navbar .navbar-links .navbar-link .bi {
+  color: black;
+  font-size: 1.3em;
+  margin-right: 2px;
+}
 @-webkit-keyframes firstElement {
   0% {
     transform: translateX(500px);
