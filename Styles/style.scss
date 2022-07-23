@@ -1,7 +1,165 @@
+// Custom Fonts
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500&family=Roboto+Mono:wght@500;700&display=swap');
+// font-family: 'Noto Sans', sans-serif;
+// font-family: 'Kanit', sans-serif;
+// font-family: 'Roboto Mono', monospace;
 
-@import "modules/mainNavBar";
-@import "modules/header";
+// Colors
+
+$secondary_color_Header:#1897c9;
+$primary_color_Header: #5151E5;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(135deg, $primary_color_Header 10%, $secondary_color_Header 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
+}
+
+.navbar{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    // NavaBard And Image
+    .navbar-brand{
+        cursor: pointer;
+
+        // Image
+        .navbar-brand-image{
+            outline: 2px solid white;
+            border-radius: 50%;
+            height: 60px;
+            // It was not going to work as fine as possible
+            margin-top: 10px;
+            animation: brandImage 3s ease-out 1;
+        }
+
+        // Image Animations
+        @keyframes brandImage {
+            0%{
+                transform: translateX(-100px);
+            }
+            60%{
+                transform: translateX(10px);
+            }
+            70%{
+                transform: translateX(-10px);
+            }
+            80%{
+                transform: translateX(5px);
+            }
+            90%{
+                transform: translateX(-5px);
+            }
+            100%{
+                transform: translateX(0px);
+            }
+        }
+
+        .navbar-brand-image:hover{
+            height: 65px;
+            transition: height .5s ease-in-out;
+        }
+    }
+
+
+    // Button Hamburger
+    .hamburger{
+        // background-color: black;
+        background-color: transparent;
+        border: 0;
+        color: white;
+        cursor: pointer;
+        font-size:30px;
+        display: none;
+    }
+
+    //  UL
+    .navbar-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 70%;
+        
+
+        // LI
+        .navbar-link{
+            list-style-type: none;
+            animation: firstElement 3s ease-out 1;
+            // A
+            .navbar-item{
+                text-decoration: none;
+                display: inline-block;
+                color: white;
+                font-family: 'Noto', sans-serif;
+                font-size: 1.2em;
+                font-weight: 500;
+                cursor: pointer;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            // On hover of a 
+            .navbar-item:hover{
+                font-size: 1.3em;
+                transition: font-size .5s ease-in-out;
+            }
+
+            // .first{
+            //     animation: firstElement 5s ease-out;
+            // }
+
+
+        }
+    }
+
+    @keyframes firstElement {
+        0%{
+            transform: translateX(500px);
+        }
+        60%{
+            transform: translateX(-10px);
+        }
+        70%{
+            transform: translateX(10px);
+        }
+        80%{
+            transform: translateX(-5px);
+        }
+        90%{
+            transform: translateX(5px);
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+
+    
+}
 
 
 
+@media screen and (max-width:858px){
 
+    // Hamburger
+    .hamburger{
+        display: inline-block;
+    }
+
+    // Navbar UL
+    .navbar-links{
+        flex-direction: column;
+    }
+}
