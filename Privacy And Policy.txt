@@ -18,9 +18,9 @@ You means the individual accessing or using the Service, or the company, or oth
 Company (referred to as either “the Company”, “We”, “Us” or “Our” in this Agreement) refers to r3d-int.com.
 Affiliate means an entity that controls, is controlled by or is under common control with a party, where “control” means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
 Account means a unique account created for You to access our Service or parts of our Service.
-Website refers to r3d-int.com, accessible from https://r3d-int.com
+Website refers to tkkcode.netlify.app, accessible from https://www.tkkcode.netlify.app
 Service refers to the Website.
-Country refers to: Pakistan
+Country refers to: India
 Service Provider means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.
 Third-party Social Media Service refers to any website or any social network website through which a User can log in or create an account to use the Service.
 Personal Data is any information that relates to an identified or identifiable individual.
@@ -111,14 +111,11 @@ Service Providers have access to Your Personal Data only to perform their tasks 
 Analytics
 We may use third-party Service providers to monitor and analyze the use of our Service.
 
-StatcounterStatcounter is a web traffic analysis tool. You can read the Privacy Policy for Statcounter here: https://statcounter.com/about/legal/
-Advertising
+Google Analytics is a web traffic analysis tool. 
+
 We may use Service providers to show advertisements to You to help support and maintain Our Service.
 
-Bing AdsBing Ads is an advertising service provided by Microsoft Inc.You can opt-out from Bing Ads by following the instructions on Bing Ads Opt-out page: https://advertise.bingads.microsoft.com/en-us/resources/policies/personalized-adsFor more information about Bing Ads, please visit their Privacy Policy: https://privacy.microsoft.com/en-us/PrivacyStatement
-Unity AdsUnity Ads is provided by Unity Technologies.You can opt-out from Unity Ads service by following the instructions as described by Unity Technologies on their Privacy Policy page: https://unity3d.com/legal/privacy-policyFor more information about Unity Technologies, please visit Unity Technologies Privacy Policy: https://unity3d.com/legal/privacy-policy
-Behavioral Remarketing
-The Company uses remarketing services to advertise on third party websites to You after You visited our Service. We and Our third-party vendors use cookies to inform, optimize and serve ads based on Your past visits to our Service.
+
 
 We also may limit how We collect, use, and store some of the information of Users between 13 and 18 years old. In some cases, this means We will be unable to provide certain functionality of the Service to these users.
 
@@ -132,10 +129,8 @@ We have no control over and assume no responsibility for the content, privacy po
 Changes to this Privacy Policy
 We may update our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.
 
-We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the “Last updated” date at the top of this Privacy Policy.
-
 You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
 
 Contact Us
 If you have any questions about this Privacy Policy, You can contact us.
-Источник: https://r3d-int.com/policy
+www.tkkcode.netlify.app

@@ -1,220 +1,307 @@
-// Custom Fonts
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500&family=Roboto+Mono:wght@500;700&display=swap');
-// font-family: 'Noto Sans', sans-serif;
-// font-family: 'Kanit', sans-serif;
-// font-family: 'Roboto Mono', monospace;
+    // Custom Fonts
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500&family=Roboto+Mono:wght@500;700&display=swap');
+    // font-family: 'Noto Sans', sans-serif;
+    // font-family: 'Kanit', sans-serif;
+    // font-family: 'Roboto Mono', monospace;
 
-// Colors
+    // Colors
 
-$secondary_color_Header:#1897c9;
-$primary_color_Header: #5151E5;
+    $secondary_color_Header:#1897c9;
+    $primary_color_Header: #5151E5;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
 
-header{
-    height: 100vh;
-    width: 100vw;
-    background-image: linear-gradient(135deg, $primary_color_Header 10%, $secondary_color_Header 100%);
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
-}
+    header{
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(135deg, $primary_color_Header 10%, $secondary_color_Header 100%);
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
+    }
 
-.navbar{
-    height: 10vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    .navbar{
+        height: 10vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
 
-    // NavaBard And Image
-    .navbar-brand{
-        cursor: pointer;
+        // NavaBard And Image
+        .navbar-brand{
+            cursor: pointer;
 
-        // Image
-        .navbar-brand-image{
-            outline: 2px solid white;
-            border-radius: 50%;
-            height: 60px;
-            // It was not going to work as fine as possible
-            margin-top: 10px;
-            animation: brandImage 3s ease-out 1;
+            // Image
+            .navbar-brand-image{
+                outline: 2px solid white;
+                border-radius: 50%;
+                height: 60px;
+                // It was not going to work as fine as possible
+                margin-top: 10px;
+                animation: brandImage 3s ease-out 1;
+            }
+
+            // Image Animations
+            @keyframes brandImage {
+                0%{
+                    transform: translateX(-100px);
+                }
+                60%{
+                    transform: translateX(10px);
+                }
+                70%{
+                    transform: translateX(-10px);
+                }
+                80%{
+                    transform: translateX(5px);
+                }
+                90%{
+                    transform: translateX(-5px);
+                }
+                100%{
+                    transform: translateX(0px);
+                }
+            }
+
+            .navbar-brand-image:hover{
+                height: 65px;
+                transition: height .5s ease-in-out;
+            }
         }
 
-        // Image Animations
-        @keyframes brandImage {
+
+        // Button Hamburger
+        .hamburger{
+            // background-color: black;
+            background-color: transparent;
+            border: 0;
+            color: white;
+            cursor: pointer;
+            font-size:30px;
+            display: none;
+        }
+
+        //  UL
+        .navbar-links{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 70%;
+            
+
+            // LI
+            .navbar-link{
+                list-style-type: none;
+                animation: firstElement 3s ease-out 1;
+                // A
+                .navbar-item{
+                    text-decoration: none;
+                    display: inline-block;
+                    color: white;
+                    font-family: 'Noto', sans-serif;
+                    font-size: 1.2em;
+                    font-weight: 500;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+
+                // On hover of a 
+                .navbar-item:hover{
+                    font-size: 1.3em;
+                    transition: font-size .5s ease-in-out;
+                }
+
+                // icons
+                .bi{
+                    color: black;
+                    font-size: 1.3em;
+                    margin-right: 2px;
+                }
+
+                // .first{
+                //     animation: firstElement 5s ease-out;
+                // }
+
+
+            }
+        }
+
+        @keyframes firstElement {
             0%{
-                transform: translateX(-100px);
+                transform: translateX(500px);
             }
             60%{
-                transform: translateX(10px);
-            }
-            70%{
                 transform: translateX(-10px);
             }
+            70%{
+                transform: translateX(10px);
+            }
             80%{
-                transform: translateX(5px);
+                transform: translateX(-5px);
             }
             90%{
-                transform: translateX(-5px);
+                transform: translateX(5px);
             }
             100%{
                 transform: translateX(0px);
             }
         }
-
-        .navbar-brand-image:hover{
-            height: 65px;
-            transition: height .5s ease-in-out;
-        }
     }
 
 
-    // Button Hamburger
-    .hamburger{
-        // background-color: black;
-        background-color: transparent;
-        border: 0;
-        color: white;
-        cursor: pointer;
-        font-size:30px;
-        display: none;
-    }
+    /// Header-Content
 
-    //  UL
-    .navbar-links{
+    .header-content{
+        font-family: 'Roboto Mono';
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 70%;
-        
-
-        // LI
-        .navbar-link{
-            list-style-type: none;
-            animation: firstElement 3s ease-out 1;
-            // A
-            .navbar-item{
-                text-decoration: none;
-                display: inline-block;
-                color: white;
-                font-family: 'Noto', sans-serif;
-                font-size: 1.2em;
-                font-weight: 500;
-                cursor: pointer;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-            }
-
-            // On hover of a 
-            .navbar-item:hover{
-                font-size: 1.3em;
-                transition: font-size .5s ease-in-out;
-            }
-
-            // icons
-            .bi{
-                color: black;
-                font-size: 1.3em;
-                margin-right: 2px;
-            }
-
-            // .first{
-            //     animation: firstElement 5s ease-out;
-            // }
-
-
-        }
-    }
-
-    @keyframes firstElement {
-        0%{
-            transform: translateX(500px);
-        }
-        60%{
-            transform: translateX(-10px);
-        }
-        70%{
-            transform: translateX(10px);
-        }
-        80%{
-            transform: translateX(-5px);
-        }
-        90%{
-            transform: translateX(5px);
-        }
-        100%{
-            transform: translateX(0px);
-        }
-    }
-
-    
-}
-
-
-
-@media screen and (max-width:858px){
-
-    // Hamburger
-    .hamburger{
-        display: inline-block;
-    }
-
-    // Navbar UL
-    .navbar-links{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        
+        h1{
+            font-size: 46px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color:white;
+            margin-bottom: 30px;
+            text-align: center;
+            animation: heading 4s ease-out;
+        }
+
+        @keyframes heading {
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0.5;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+
+        p{
+            font-size: 20px;
+            text-align: center;
+            line-height: 24px;
+            margin-bottom: 30px;
+            width: 60%;
+        }
+
+        a{
+            font-size: 16px;
+            font-weight: 300;
+            background-color: white;
+            border-radius: 40px;
+            text-decoration: none;
+            color: rgb(26, 119, 224);
+            cursor: pointer;
+            height: 60px;
+            width: 200px;
+            padding: 10px;
+            display: inline-block;
+            text-align: center;
+            animation: mainButton 3s ease-out;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+
+        a:hover{
+            box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.9);
+            background-color: #1897c9;
+            color: white;
+            transition: all 1s ease-in-out;            
+        }
+
+        @keyframes mainButton {
+            0%{
+                transform: translateY(500px);
+            }
+            60%{
+                transform: translateY(-10px);
+            }
+            70%{
+                transform: translateY(10px);
+            }
+            80%{
+                transform: translateY(-5px);
+            }
+            90%{
+                transform: translateY(5px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
     }
-}
+
+
+
+    @media screen and (max-width:858px){
+
+        // Hamburger
+        .hamburger{
+            display: inline-block;
+        }
+
+        // Navbar UL
+        .navbar-links{
+            flex-direction: column;
+        }
+    }
 
 
 
 
 
-//
     //
-// 
+        //
     // 
-.main-contactUs{
-    font-family: 'Kanit', sans-serif;
-    margin: 15px;
-    background-color: rgba(232, 233, 235, 0.76);
+        // 
+    .main-contactUs, .menu{
+        font-family: 'Kanit', sans-serif;
+        margin: 15px;
+        background-color: rgba(232, 233, 235, 0.76);
 
-    h1{
-        // font-size: 24px;
-        letter-spacing: 2px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
+        h1{
+            // font-size: 24px;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
 
-    .start{
-        letter-spacing: 1px;
-        line-height: 1.5;
-        text-align: justify;
-        font-size: 19px;
-    }
-    .end{
-        font-size: 20px; 
-        font-weight: 500; 
-        letter-spacing: 1px;
-        line-height: 2
-    }
+        .start{
+            letter-spacing: 1px;
+            line-height: 1.5;
+            text-align: justify;
+            font-size: 19px;
+        }
+        .end{
+            font-size: 20px; 
+            font-weight: 500; 
+            letter-spacing: 1px;
+            line-height: 2
+        }
 
-    a{
-        font-size: 20px;
-        font-weight: bold;
-        padding: 0px 5px;
-        color: $primary_color_Header;
-        transition: all .3s ease-in-out;
-        cursor: pointer;
-        text-decoration: none;
+        a{
+            font-size: 20px;
+            font-weight: bold;
+            padding: 0px 5px;
+            color: $primary_color_Header;
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        a:hover{
+            color: $secondary_color_Header;
+            font-size: 21px;
+        }
     }
-    a:hover{
-        color: $secondary_color_Header;
-        font-size: 21px;
-    }
-}
