@@ -170,3 +170,49 @@ header{
         flex-direction: column;
     }
 }
+
+
+
+
+
+//
+    //
+// 
+    // 
+.main-contactUs{
+    font-family: 'Kanit', sans-serif;
+
+    h1{
+        // font-size: 24px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .start{
+        letter-spacing: 1px;
+        line-height: 1.5;
+        text-align: justify;
+        font-size: 19px;
+    }
+    .end{
+        font-size: 20px; 
+        font-weight: 500; 
+        letter-spacing: 1px;
+        line-height: 2
+    }
+
+    a{
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0px 5px;
+        color: $primary_color_Header;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    a:hover{
+        color: $secondary_color_Header;
+        font-size: 21px;
+    }
+}

@@ -164,4 +164,37 @@ header {
   .navbar-links {
     flex-direction: column;
   }
+}
+.main-contactUs {
+  font-family: "Kanit", sans-serif;
+}
+.main-contactUs h1 {
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.main-contactUs .start {
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-align: justify;
+  font-size: 19px;
+}
+.main-contactUs .end {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+.main-contactUs a {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px 5px;
+  color: #5151E5;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+.main-contactUs a:hover {
+  color: #1897c9;
+  font-size: 21px;
 }/*# sourceMappingURL=style.css.map */
