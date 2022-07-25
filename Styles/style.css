@@ -167,6 +167,8 @@ header {
 }
 .main-contactUs {
   font-family: "Kanit", sans-serif;
+  margin: 15px;
+  background-color: rgba(232, 233, 235, 0.76);
 }
 .main-contactUs h1 {
   letter-spacing: 2px;
